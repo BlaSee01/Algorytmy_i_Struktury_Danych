@@ -7,17 +7,20 @@ int main()
     setlocale(LC_ALL, "");
     int a;
     int dzielniki = 0;
-    cout << "Podaj liczbê: ";
+    cout << "Podaj liczbÃª: ";
     cin >> a;
 
     for(int i = 2; i <= a ; i++){
         if(a%i==0)  dzielniki++;
+        if(dzielniki > 2){
+        cout << "Nie jest liczbÂ¹ pierwszÂ¹!";
+        }
     }
 
     if(dzielniki > 2){
-        cout << "Nie jest liczb¹ pierwsz¹!";
+        cout << "Nie jest liczbÂ¹ pierwszÂ¹!";
     }else{
-        cout << "Jest liczb¹ peirwsz¹!";
+        cout << "Jest liczbÂ¹ peirwszÂ¹!";
     }
 
     return 0;
